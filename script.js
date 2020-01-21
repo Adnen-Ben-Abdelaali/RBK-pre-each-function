@@ -207,3 +207,57 @@ function sumBy(numbers, func) {
 4.Write a function productBy
 that works like sumBy, but for products.
 */
+function productBy(numbers) {
+  var total = 1;
+  each(numbers, function(element) {
+    total *= funct(element);
+  })
+  return total;
+}
+/******************************************************/
+/*
+1.Write a function doubleAll that takes an array of numbers
+ as a parameter and returns an array of all of those numbers
+doubled:
+function doubleAll(numbers) {
+       // ...
+ }
+ doubleAll([1, 3, 10, 4, 7]); // => [2, 6, 20, 8, 14]
+ */
+function doubleAll(numbers) {
+  var outputArray =  new Array();
+  each(numbers, function(element) {
+    outputArray.push(element * 2);
+  });
+  return outputArray;
+}
+/******************************************************/
+/*
+2.Write a function halveAll that takes an array of numbers
+ as a parameter and returns an array of
+  all of those numbers halved (divided by two).
+  */
+  function halveAll(numbers) {
+    var arrayHalved = new Array();
+    each(numbers, function(element) {
+      arrayHalved.push(element / 2);
+    });
+    return arrayHalved;
+  }
+/****************************************************/
+/*
+3.Write a function uppercaseAll that takes
+an array of strings as a parameter, and returns an array of
+ all of those strings, but transformed to upper case.
+  You can use toUpperCase to convert a string to upper case.
+
+'hello, world'.toUpperCase(); // => 'HELLO, WORLD'
+*/
+function uppercaseAll(arrayOfStrings) {
+  var outputArray = new Array();
+  each(arrayOfStrings, function(element) {
+    outputArray.push(element.toUpperCase());
+  });
+  return outputArray;
+}
+/****************************************************/
